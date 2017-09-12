@@ -12,7 +12,26 @@ import task1.*;
  * @author Mitch
  */
 public class ComputerComponent {
+    
     private int serialNumber;
     private String manufacturer; 
+
+    public int getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(int serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+    
+    
     
 }

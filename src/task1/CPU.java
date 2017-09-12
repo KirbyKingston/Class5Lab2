@@ -12,12 +12,14 @@ package task1;
 public class CPU extends InternalComputerComponent {
     
     private double clockRate;
-    
-    
-    public static void main(String[] args) {
-        
-        
-        
+
+    public double getClockRate() {
+        return clockRate;
     }
+
+    public void setClockRate(double clockRate) {
+        this.clockRate = clockRate;
+    }
+    
     
 }
