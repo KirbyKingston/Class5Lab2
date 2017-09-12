@@ -16,6 +16,15 @@ public class ComputerComponent {
     private int serialNumber;
     private String manufacturer; 
 
+    public ComputerComponent(int serialNumber, String manufacturer) {
+        this.serialNumber = serialNumber;
+        this.manufacturer = manufacturer;
+    }
+    
+    public String ComputerInfo(){
+        return this.getManufacturer() + this.getSerialNumber();
+    }
+
     public int getSerialNumber() {
         return serialNumber;
     }
