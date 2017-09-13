@@ -5,8 +5,6 @@
  */
 package task2;
 
-import task1.*;
-
 /**
  *
  * @author Mitch
@@ -16,8 +14,7 @@ public class ComputerComponent {
     private int serialNumber;
     private String manufacturer; 
 
-    public ComputerComponent(int serialNumber, String manufacturer) {
-        this.serialNumber = serialNumber;
+    public ComputerComponent(String manufacturer) {
         this.manufacturer = manufacturer;
     }
     

@@ -5,12 +5,14 @@
  */
 package task2;
 
-import task1.*;
-
 /**
  *
  * @author Mitch
  */
 public class InternalComputerComponent extends ComputerComponent{
+    
+    public InternalComputerComponent(String manufacturer) {
+        super(manufacturer);
+    }
     
 }

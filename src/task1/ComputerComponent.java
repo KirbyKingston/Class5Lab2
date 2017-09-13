@@ -10,7 +10,25 @@ package task1;
  * @author Mitch
  */
 public class ComputerComponent {
-    private int serialNumber;
+    
     private String manufacturer; 
+
+    public ComputerComponent(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+    
+    public String ComputerInfo(){
+        return this.getManufacturer();
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+    
+    
     
 }

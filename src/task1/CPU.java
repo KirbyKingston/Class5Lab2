@@ -12,6 +12,19 @@ package task1;
 public class CPU extends InternalComputerComponent {
     
     private double clockRate;
+    private String serialNumber;
+
+    public CPU(String manufacturer) {
+        super(manufacturer);
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
 
     public double getClockRate() {
         return clockRate;

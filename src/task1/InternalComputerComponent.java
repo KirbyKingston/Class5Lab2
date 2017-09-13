@@ -11,4 +11,8 @@ package task1;
  */
 public class InternalComputerComponent extends ComputerComponent{
     
+    public InternalComputerComponent(String manufacturer) {
+        super(manufacturer);
+    }
+    
 }
