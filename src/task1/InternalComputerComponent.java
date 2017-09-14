@@ -19,5 +19,9 @@ public class InternalComputerComponent extends ComputerComponent{
     public void setWorkingProperly(boolean workingProperly) {
         this.workingProperly = workingProperly;
     }
-    
+    @Override
+    public String componentStatus(){
+        return "This component was built in " + this.getBuildYear() + " by " +  this.getManufacturer()+".\n"
+                + "Its working status is " + workingProperly;
+    }
 }
