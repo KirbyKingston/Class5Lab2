@@ -20,7 +20,7 @@ public class Startup {
         cpu1.setClockRate("5.8");
         cpu1.setSerialNumber("abc123");
         
-        System.out.println(cpu1.componentStatus());
+        System.out.println(cpu1.buildComponentStatus());
         
         InternalComputerComponent comp1 = new InternalComputerComponent();
         comp1.setBuildYear("2016");
@@ -28,7 +28,7 @@ public class Startup {
         comp1.setWorkingProperly(true);
         comp1.setColor("red");
         
-        System.out.println(comp1.componentStatus());
+        System.out.println(comp1.buildComponentStatus());
     }
     
 }

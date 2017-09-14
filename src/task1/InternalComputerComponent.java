@@ -29,7 +29,7 @@ public class InternalComputerComponent extends ComputerComponent{
         this.workingProperly = workingProperly;
     }
     @Override
-    public String componentStatus(){
+    public String buildComponentStatus(){
         return "\n" + "This component was built in " + this.getBuildYear() + " by " +  this.getManufacturer()+".\n"
                 + "Its working status is " + workingProperly + " and it is the color " + color + ".";
     }

@@ -10,5 +10,19 @@ package task3;
  * @author Mitch
  */
 public interface ComputerComponent {
+      
+    public static String REQUIRED_MSG = "This is a required field.";
+    
+    
+    public abstract String getManufacturer(); 
+    
+    public abstract void setManufacturer(String manufacturer);
+    
+    public abstract String getBuildYear();
+    
+    public abstract void setBuildYear(String buildYear);
+
+    
+    public abstract String componentStatus();
     
 }

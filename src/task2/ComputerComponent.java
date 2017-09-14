@@ -9,25 +9,22 @@ package task2;
  *
  * @author Mitch
  */
-public class ComputerComponent {
+public abstract class ComputerComponent {
     
-    private int serialNumber;
     private String manufacturer; 
-
-    public ComputerComponent(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
+    private String buildYear;
     
-    public String ComputerInfo(){
-        return this.getManufacturer() + this.getSerialNumber();
+    public static String REQUIRED_MSG = "This is a required field.";
+    
+    public String getBuildYear() {
+        return buildYear;
     }
 
-    public int getSerialNumber() {
-        return serialNumber;
-    }
-
-    public void setSerialNumber(int serialNumber) {
-        this.serialNumber = serialNumber;
+    public void setBuildYear(String buildYear) {
+        if(buildYear == null || buildYear.isEmpty()) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
+        this.buildYear = buildYear;
     }
 
     public String getManufacturer() {
@@ -35,9 +32,14 @@ public class ComputerComponent {
     }
 
     public void setManufacturer(String manufacturer) {
+        if(manufacturer == null || manufacturer.isEmpty()) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
         this.manufacturer = manufacturer;
     }
     
-    
+    public String componentStatus(){
+        return "\n" + "This component was built in " + buildYear + " by " +  manufacturer;
+    }
     
 }

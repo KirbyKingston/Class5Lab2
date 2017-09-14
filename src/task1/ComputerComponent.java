@@ -38,7 +38,7 @@ public class ComputerComponent {
         this.manufacturer = manufacturer;
     }
     
-    public String componentStatus(){
+    public String buildComponentStatus(){
         return "\n" + "This component was built in " + buildYear + " by " +  manufacturer;
     }
     

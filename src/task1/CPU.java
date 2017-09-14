@@ -37,7 +37,7 @@ public class CPU extends InternalComputerComponent {
     }
     
     @Override
-    public String componentStatus(){
+    public String buildComponentStatus(){
         return "\n" + "This CPU was built in " + this.getBuildYear() + " by " +  this.getManufacturer()+".\n"
                 + "Its working status is " + this.isWorkingProperly() + ". \n"
                 + "This CPU has a standard clockrate of " + clockRate + "GHz and its serial number is " + serialNumber + ".";
