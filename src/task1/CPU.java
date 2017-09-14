@@ -11,7 +11,7 @@ package task1;
  */
 public class CPU extends InternalComputerComponent {
     
-    private double clockRate;
+    private String clockRate;
     private String serialNumber;
 
     public String getSerialNumber() {
@@ -19,14 +19,20 @@ public class CPU extends InternalComputerComponent {
     }
 
     public void setSerialNumber(String serialNumber) {
+        if(serialNumber == null || serialNumber.isEmpty()) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
         this.serialNumber = serialNumber;
     }
 
-    public double getClockRate() {
+    public String getClockRate() {
         return clockRate;
     }
 
-    public void setClockRate(double clockRate) {
+    public void setClockRate(String clockRate) {
+        if(clockRate == null || clockRate.isEmpty()) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
         this.clockRate = clockRate;
     }
     

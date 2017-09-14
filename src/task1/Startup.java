@@ -17,7 +17,7 @@ public class Startup {
         cpu1.setBuildYear("2017");
         cpu1.setManufacturer("Intel");
         cpu1.setWorkingProperly(true);
-        cpu1.setClockRate(5.8);
+        cpu1.setClockRate("5.8");
         cpu1.setSerialNumber("abc123");
         
         System.out.println(cpu1.componentStatus());

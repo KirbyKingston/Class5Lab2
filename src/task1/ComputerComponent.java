@@ -14,15 +14,16 @@ public class ComputerComponent {
     private String manufacturer; 
     private String buildYear;
     
+    public static String REQUIRED_MSG = "This is a required field.";
     
-    public String ComputerInfo(){
-        return this.getManufacturer();
-    }
     public String getBuildYear() {
         return buildYear;
     }
 
     public void setBuildYear(String buildYear) {
+        if(buildYear == null || buildYear.isEmpty()) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
         this.buildYear = buildYear;
     }
 
@@ -31,6 +32,9 @@ public class ComputerComponent {
     }
 
     public void setManufacturer(String manufacturer) {
+        if(manufacturer == null || manufacturer.isEmpty()) {
+            throw new IllegalArgumentException(REQUIRED_MSG);
+        }
         this.manufacturer = manufacturer;
     }
     

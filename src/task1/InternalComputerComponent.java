@@ -12,7 +12,8 @@ package task1;
 public class InternalComputerComponent extends ComputerComponent{
 
     private boolean workingProperly;
-
+    private String color;
+    
     public String getColor() {
         return color;
     }
@@ -20,7 +21,6 @@ public class InternalComputerComponent extends ComputerComponent{
     public void setColor(String color) {
         this.color = color;
     }
-    private String color;
     
     public boolean isWorkingProperly() {
         return workingProperly;
