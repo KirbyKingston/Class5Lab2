@@ -14,10 +14,6 @@ public class CPU extends InternalComputerComponent {
     private double clockRate;
     private String serialNumber;
 
-    public CPU(String manufacturer) {
-        super(manufacturer);
-    }
-
     public String getSerialNumber() {
         return serialNumber;
     }

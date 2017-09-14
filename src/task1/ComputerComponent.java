@@ -12,13 +12,18 @@ package task1;
 public class ComputerComponent {
     
     private String manufacturer; 
-
-    public ComputerComponent(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
+    private String buildYear;
+    
     
     public String ComputerInfo(){
         return this.getManufacturer();
+    }
+    public String getBuildYear() {
+        return buildYear;
+    }
+
+    public void setBuildYear(String buildYear) {
+        this.buildYear = buildYear;
     }
 
     public String getManufacturer() {
@@ -29,6 +34,8 @@ public class ComputerComponent {
         this.manufacturer = manufacturer;
     }
     
-    
+    public String componentStatus(){
+        return "This component was built in " + buildYear + " by " +  manufacturer;
+    }
     
 }

@@ -10,9 +10,14 @@ package task1;
  * @author Mitch
  */
 public class InternalComputerComponent extends ComputerComponent{
+
+    private boolean workingProperly;
     
-    public InternalComputerComponent(String manufacturer) {
-        super(manufacturer);
+    public boolean isWorkingProperly() {
+        return workingProperly;
+    }
+    public void setWorkingProperly(boolean workingProperly) {
+        this.workingProperly = workingProperly;
     }
     
 }
