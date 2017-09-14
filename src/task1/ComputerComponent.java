@@ -35,7 +35,7 @@ public class ComputerComponent {
     }
     
     public String componentStatus(){
-        return "This component was built in " + buildYear + " by " +  manufacturer;
+        return "\n" + "This component was built in " + buildYear + " by " +  manufacturer;
     }
     
 }

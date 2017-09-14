@@ -21,6 +21,14 @@ public class Startup {
         cpu1.setSerialNumber("abc123");
         
         System.out.println(cpu1.componentStatus());
+        
+        InternalComputerComponent comp1 = new InternalComputerComponent();
+        comp1.setBuildYear("2016");
+        comp1.setManufacturer("Asus");
+        comp1.setWorkingProperly(true);
+        comp1.setColor("red");
+        
+        System.out.println(comp1.componentStatus());
     }
     
 }
