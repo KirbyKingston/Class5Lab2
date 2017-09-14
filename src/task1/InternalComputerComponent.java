@@ -12,15 +12,6 @@ package task1;
 public class InternalComputerComponent extends ComputerComponent{
 
     private boolean workingProperly;
-    private String color;
-    
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
     
     public boolean isWorkingProperly() {
         return workingProperly;
@@ -31,6 +22,6 @@ public class InternalComputerComponent extends ComputerComponent{
     @Override
     public String buildComponentStatus(){
         return "\n" + "This component was built in " + this.getBuildYear() + " by " +  this.getManufacturer()+".\n"
-                + "Its working status is " + workingProperly + " and it is the color " + color + ".";
+                + "Its working status is " + workingProperly + ".";
     }
 }

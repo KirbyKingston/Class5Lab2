@@ -12,6 +12,7 @@ package task1;
 public class Startup {
     
     public static void main(String[] args) {
+        
         CPU cpu1 = new CPU();
         
         cpu1.setBuildYear("2017");
@@ -26,7 +27,6 @@ public class Startup {
         comp1.setBuildYear("2016");
         comp1.setManufacturer("Asus");
         comp1.setWorkingProperly(true);
-        comp1.setColor("red");
         
         System.out.println(comp1.buildComponentStatus());
     }
